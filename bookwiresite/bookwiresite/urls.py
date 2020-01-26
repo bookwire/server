@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from bookwireapp import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
+    path("legal/terms/", views.terms),
+    path("legal/privacy/", views.privacy),
+    path("legal/", views.legal),
+    path("oss", views.opensource),
 ]

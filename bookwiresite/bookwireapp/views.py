@@ -1,3 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
-# Create your views here.
+def terms(request):
+    return render(request, "terms.html")
+
+def privacy(request):
+    return render(request, "privacy.html")
+
+def opensource(request):
+    return render(request, "opensource.html")
+
+def legal(request):
+    return redirect("/legal/terms")
