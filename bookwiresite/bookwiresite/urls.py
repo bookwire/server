@@ -22,5 +22,5 @@ urlpatterns = [
     path("legal/terms/", views.terms),
     path("legal/privacy/", views.privacy),
     path("legal/", views.legal),
-    path("oss", views.opensource),
+    path("oss/", views.opensource),
 ]
